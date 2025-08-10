@@ -1,14 +1,30 @@
 {
-  "id": "plugin.com.pot-app.lingva",
+  "id": "plugin.com.pot-app.qwen",
   "plugin_type": "translate",
-  "icon": "lingva.svg",
-  "display": "Lingva",
-  "homepage": "https://github.com/pot-app/pot-app-translate-plugin-template",
-  "needs": [{ "key": "requestPath", "display": "请求地址" }],
+  "icon": "qwen-color.svg",
+  "display": "Qwen 翻译插件",
+  "homepage": "https://github.com/NBeara/pot-app-translate-plugin-qwen",
+  "needs": [
+    {
+      "key": "apiKey",
+      "display": "API Key",
+      "type": "input"
+    },
+    {
+      "key": "modelName",
+      "display": "模型选择",
+      "type": "select",
+      "options": {
+        "qwen-mt-turbo": "Qwen-MT-Turbo (推荐)",
+        "qwen-mt-plus": "Qwen-MT-Plus (翻译质量更高)",
+        "qwen-turbo": "Qwen-Turbo (通用)"
+      }
+    }
+  ],
   "language": {
     "auto": "auto",
     "zh_cn": "zh",
-    "zh_tw": "zh_HANT",
+    "zh_tw": "zh_tw",
     "en": "en",
     "ja": "ja",
     "ko": "ko",

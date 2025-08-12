@@ -21,8 +21,8 @@ async function translate(text, from, to, options) {
     }
 
     // 如果用户没有选择模型，提供一个默认值
-    if (!model) {
-        model = "qwen-mt-turbo"; // 默认使用 Qwen MT Turbo 模型
+    if (!modelName) {
+        modelName = "qwen-mt-turbo"; // 默认使用 Qwen MT Turbo 模型
     }
 
     // Qwen 的兼容模式 API 地址

@@ -20,6 +20,11 @@ async function translate(text, from, to, options) {
         throw "请填写你的qwen API key.";
     }
 
+    // 如果用户没有选择模型，提供一个默认值
+    if (!model) {
+        model = "qwen-mt-turbo"; // 默认使用 Qwen MT Turbo 模型
+    }
+
     // Qwen 的兼容模式 API 地址
     const url = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
 

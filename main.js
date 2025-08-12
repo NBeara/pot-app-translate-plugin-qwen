@@ -13,16 +13,11 @@
 async function translate(text, from, to, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
-    const { apiKey, modelName } = config;
+    const { apiKey, modelName = "qwen-mt-turbo" } = config;
 
     // 检查 API Key 是否存在
     if (!apiKey || apiKey.length === 0) {
         throw "请填写你的qwen API key.";
-    }
-
-    // 如果用户没有选择模型，提供一个默认值
-    if (!modelName) {
-        modelName = "qwen-mt-turbo"; // 默认使用 Qwen MT Turbo 模型
     }
 
     // Qwen 的兼容模式 API 地址

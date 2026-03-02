@@ -15,9 +15,9 @@
       "display": "模型选择",
       "type": "select",
       "options": {
-        "qwen-mt-turbo": "Qwen-MT-Turbo (推荐)",
+        "qwen-mt-flash": "Qwen-MT-Flash (推荐)",
         "qwen-mt-plus": "Qwen-MT-Plus (翻译质量更高)",
-        "qwen-turbo": "Qwen-Turbo (通用)"
+        "qwen-plus": "Qwen-Plus (通用)"
       }
     }
   ],

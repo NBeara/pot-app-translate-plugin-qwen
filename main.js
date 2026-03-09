@@ -13,7 +13,7 @@
 async function translate(text, from, to, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
-    const { apiKey, modelName = "qwen-mt-turbo" } = config;
+    const { apiKey, modelName = "qwen-mt-plus" } = config;
 
     // 检查 API Key 是否存在
     if (!apiKey || apiKey.length === 0) {
